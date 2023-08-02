@@ -323,14 +323,6 @@ jobs:
         files: ${{ github.workspace }}/build/libsimple-linux-${{ matrix.os }}.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Release
-      if: ${{ startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest' }}
-      uses: softprops/action-gh-release@v1
-      with:
-        draft: true
-        files: ${{ github.workspace }}/build/libsimple-linux-${{ matrix.os }}.zip
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
   MacOS:
     runs-on: macos-latest
