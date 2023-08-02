@@ -205,7 +205,6 @@ jobs:
       fail-fast: true
       matrix:
         include:
-        - os: ubuntu-18.04
         - os: ubuntu-latest
     steps:
     - name: "Release Build Type"
