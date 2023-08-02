@@ -85,7 +85,6 @@ make install
 - `src/simple_tokenizer` 分词器实现
 - `src/simple_highlight` 高亮函数，基于内置的高亮函数改的，让命中的相邻单词连续高亮
 - `src/pinyin` 中文转拼音以及拼音拆 query 的实现
-
 ## TODO
 
 - [x] 添加 CI/CD 
